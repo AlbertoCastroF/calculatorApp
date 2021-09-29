@@ -1,8 +1,14 @@
+import CalculatorComp from "./Calculator";
+import { ThemeProvider } from "styled-components";
+import { themes, GlobalStyles } from "./themes/themes";
+
 function App() {
+  const theme = "one";
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <ThemeProvider theme={themes[theme]}>
+      <GlobalStyles />
+      <CalculatorComp />
+    </ThemeProvider>
   );
 }
 
