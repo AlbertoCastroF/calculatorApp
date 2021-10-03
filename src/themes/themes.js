@@ -1,8 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
+//these are the general styles i will use for the site
 export const GlobalStyles = createGlobalStyle`
-    body {
-      height: 100vh;
+    * {
+      box-sizing: border-box;
+      font-size: 32px;
+      font-family: "Spartan", sans-serif;
+      font-weight: 700; 
+    }
+
+    body {   
+      height: 90vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -10,8 +18,10 @@ export const GlobalStyles = createGlobalStyle`
     }
 `;
 
+//the colors that represent each theme
 export const themes = {
-  one: {
+  1: {
+    id: 1,
     mainBack: "hsl(222, 26%, 31%)",
     keypadBack: "hsl(223, 31%, 20%)",
     screenBack: "hsl(224, 36%, 15%)",
@@ -25,7 +35,8 @@ export const themes = {
     delResetEqualKeyTextColor: "hsl(0, 100%, 100%)",
     displayText: "hsl(30, 25%, 89%)",
   },
-  two: {
+  2: {
+    id: 2,
     mainBack: "hsl(0, 0%, 90%)",
     keypadBack: "hsl(0, 5%, 81%)",
     screenBack: "hsl(0, 0%, 93%)",
@@ -39,7 +50,8 @@ export const themes = {
     delResetEqualKeyTextColor: "hsl(0, 100%, 100%)",
     displayText: "hsl(60, 10%, 19%)",
   },
-  three: {
+  3: {
+    id: 3,
     mainBack: "hsl(268, 75%, 9%)",
     keypadBack: "hsl(268, 71%, 12%)",
     screenBack: "hsl(268, 71%, 12%)",
