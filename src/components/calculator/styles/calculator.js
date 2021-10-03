@@ -43,6 +43,11 @@ export const ButtonsContainer = styled.div`
   height: 420px;
   border-radius: 10px;
   background: ${({ theme }) => theme.keypadBack};
+
+  @media (min-width: 1000px) {
+    padding: 0.5em;
+    height: auto;
+  }
 `;
 
 export const Button = styled.button`
@@ -79,7 +84,8 @@ export const Button = styled.button`
 
   @media (min-width: 1000px) {
     width: ${({ name }) =>
-      name === "RESET" || name === "=" ? "220px" : "100px"};
+      name === "RESET" || name === "=" ? "200px" : "90px"};
+    margin-bottom: 0.5em;
   }
 `;
 
